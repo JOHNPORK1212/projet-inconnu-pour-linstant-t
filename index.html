@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jeu</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Chat test</h1>
+    <input id="msg" placeholder="Tapez votre message..." />
+    <button onclick="send()">Envoyer</button>
+    <div id="log"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      function send() {
+        const msg = document.getElementById("msg").value;
+        socket.emit("message", msg);
+      }
+      socket.on("message", (msg) => {
+        const log = document.getElementById("log");
+        log.innerHTML += `<p>${msg}</p>`;
+      });
+    </script>
+  </body>
+</html>
