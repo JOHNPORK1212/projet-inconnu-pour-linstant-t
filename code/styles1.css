@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+h2 {
+    color: #24863a;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.conteneur {
+    position: relative; 
+    width: 100vw;
+    height: 100vh;
+}
+
+#pseudo {
+    position: absolute;  
+    top: 50%;           
+    left: 50%;          
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    z-index: 10; 
+}
+
+img {
+    width: 98vw;
+    height: 96vh;
+    object-fit: contain;
+    display: block; 
+    margin: 0 auto;
+    z-index: 1; 
+}
+
+#pseudo input {
+    position: absolute;
+    top: 35%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 170px; 
+    height: 50px;
+  
+
+    background-color: transparent;
+    border: none;                                
+    border-radius: 5px;                          
+    outline: none;
+    text-align: center;                               
+  
+
+    font-family: "Rammetto One", sans-serif;          
+    font-weight: 800;                
+    color: #333;                   
+  }
+
+  #pseudo input::placeholder {
+    color: #777677;
+
+  }
+  
+
+  #pseudo button:nth-of-type(1) {
+    position: absolute;
+    top: 33%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 6px 6px;
+    font-size: 16px;
+    border-radius: none;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+
+
+.alerte {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .alerte button {
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #f00;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .alerte button:hover {
+    background-color: #f00;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
