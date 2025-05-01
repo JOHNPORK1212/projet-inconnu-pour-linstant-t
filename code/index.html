@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <title>jeuuu</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrez pseudo</title>
+    <link rel="stylesheet" href="styles1.css">
   </head>
   <body>
-    <h1>Chat test</h1>
-    <input id="msg" placeholder="pseudo" />
-    <button onclick="send()">Envoyer</button>
+    <script src="java1.js"></script>
+    
+
+    <div class="conteneur">
+      <div id="pseudo">
+        <input type="text" id="pseudoInput" placeholder="VOTRE PSEUDO" maxlength="17">
+        <button onclick="validerEtRediriger()">12345678</button>
+        <img src="caricature.png" alt="caricature_page_acceuil">
+      </div>
+    </div>
+
+
+    <div id="alerte" class="alerte">
+      <p id="alerteMessage">Entre un pseudo zbi</p>
+      <button onclick="fermerAlerte()">ok boss</button>
+    </div>
+
+
   </body>
 </html>
