@@ -30,3 +30,11 @@ function validerEtRediriger() {
       document.getElementById('affichagePseudo').innerText = "Bienvenue, " + pseudo + "!";
     }
   };
+
+
+// empecher le zoom
+  document.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault(); 
+    }
+  }, { passive: false });
