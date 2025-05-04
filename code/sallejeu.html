@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Avatar avec images</title>
-  <link rel="stylesheet" href="styles2.css" />
-</head>
-<body>
-    <div class="avatar-container">
-        <div class="avatar">
-          <div class="part" id="color"></div>
-          <div class="part" id="face"></div>
-          <div class="part" id="hat"></div>
-        </div>
-    
-        <div class="arrows"><button onclick="prev('color')">◀ Couleur</button><button onclick="next('color')">▶</button></div>
-        <div class="arrows"><button onclick="prev('face')">◀ Visage</button><button onclick="next('face')">▶</button></div>
-        <div class="arrows"><button onclick="prev('hat')">◀ Chapeau</button><button onclick="next('hat')">▶</button></div>
+    <meta charset="UTF-8" />
+    <title>Avatar avec images</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+      <div class="main-container">
+          <div class="controls-left">
+              <div class="arrows">
+                  <button onclick="prev('hat')"><img src="nextgauche.png" alt="Précédent"></button>
+              </div>
+              <div class="arrows">
+                  <button onclick="prev('face')"><img src="nextgauche.png" alt="Précédent"></button>
+              </div>
+              <div class="arrows">
+                  <button onclick="prev('color')"><img src="nextgauche.png" alt="Précédent"></button>
+              </div>
+          </div>
+  
+          <div class="avatar-container">
+              <div class="avatar">
+                  <div class="part" id="hat"></div>
+                  <div class="part" id="face"></div>
+                  <div class="part" id="color"></div>
+              </div>
+          </div>
+  
+          <div class="controls-right">
+              <div class="arrows">
+                  <button onclick="next('hat')"><img src="nextdroite.png" alt="Suivant"></button>
+              </div>
+              <div class="arrows">
+                  <button onclick="next('face')"><img src="nextdroite.png" alt="Suivant"></button>
+              </div>
+              <div class="arrows">
+                  <button onclick="next('color')"><img src="nextdroite.png" alt="Suivant"></button>
+              </div>
+          </div>
       </div>
-  </div>
-
-  <script src="java2.js"></script>
-</body>
-</html>
+  
+      <script src="java2.js"></script>
+  </body>
+  </html>
