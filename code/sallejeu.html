@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Salle de jeu</title>
-    <link rel="stylesheet" href="styles2.css">
-  </head>
-  <body>
-    <script src="java1.js"></script>
-    <div id="pseudo">
-      <h1>Bonjour <span id="affichagePseudo"></span></h1>
-    </div>
-  </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Avatar avec images</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+    <div class="avatar-container">
+        <div class="avatar">
+          <div class="part" id="color"></div>
+          <div class="part" id="face"></div>
+          <div class="part" id="hat"></div>
+        </div>
+    
+        <div class="arrows"><button onclick="prev('color')">◀ Couleur</button><button onclick="next('color')">▶</button></div>
+        <div class="arrows"><button onclick="prev('face')">◀ Visage</button><button onclick="next('face')">▶</button></div>
+        <div class="arrows"><button onclick="prev('hat')">◀ Chapeau</button><button onclick="next('hat')">▶</button></div>
+      </div>
+  </div>
+
+  <script src="java2.js"></script>
+</body>
 </html>
